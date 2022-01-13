@@ -1,0 +1,53 @@
+.e-logo {
+    position: relative;
+    z-index: 900;
+    max-width: 200px;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: 768px) {
+        z-index: 800;
+    }
+
+    &__wrapper {
+        @include flexCenter;
+        max-width: 200px;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: -80px;
+        z-index: 800;
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    &__svg {
+        width: 150px;
+        height: 150px;
+        fill: $c-yellow;
+        cursor: pointer;
+        z-index: 800;
+        @media (max-width: 768px) {
+            width: 130px;
+            height: 130px;
+        }
+        @media (max-width: 480px) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+
+.logo-rotate {
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: rotate 4s linear infinite;
+}
+
+.logo-scroll {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    &:hover {
+        fill: $c-dark-red;
+        transition: $t-normal;
+    }
+}

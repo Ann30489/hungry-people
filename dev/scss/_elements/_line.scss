@@ -1,0 +1,80 @@
+.e-line {
+    position: absolute;
+    background-color: $c-light-grey;
+    z-index: 0;
+    animation: grow 3s forwards;
+    &--hor-left {
+        height: 1px;
+        top: 13%;
+        left: 4%;
+        width: 37vw;
+        @media (max-width: 768px) {
+            width: 30vw;
+        }
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+    &--hor-right {
+        height: 1px;
+        top: 13%;
+        right: 4%;
+        width: 37vw;
+        @media (max-width: 768px) {
+            width: 30vw;
+        }
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+    &--vert-central {
+        width: 1px;
+        height: 420px;
+        bottom: 60px;
+        left: 51%;
+        @media (max-width: 768px) {
+            height: 300px;
+        }
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &--vert-small {
+        width: 1px;
+        height: 57px;
+        top: 60px;
+        left: 51%;
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    &--vert-left {
+        width: 1px;
+        height: 104vh;
+        top: 13%;
+        left: 19%;
+        @media (max-width: 1024px) {
+            height: 90vh;
+        }
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+    &--vert-right {
+        width: 1px;
+        height: 104vh;
+        top: 13%;
+        right: 19%;
+        @media (max-width: 1024px) {
+            height: 90vh;
+        }
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+}
+
+.shake-line {
+    animation: shake 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}

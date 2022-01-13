@@ -1,0 +1,31 @@
+mixin banner()
+	.c-banner(id="banner")
+		.c-banner__wrapper
+			.c-banner__info
+				p.c-banner__subtitle RESTAURANT
+				h1.c-banner__title HUNGRY PEOPLE
+				+subLine()
+				+line({modifier: "hor-left"})
+				+line({modifier: "hor-right"})
+				+line({modifier: "vert-left"})
+				+line({modifier: "vert-right"})
+				.c-banner__buttons
+					.c-banner__buttons__wrapper
+						+button({className: "c-button--short", type: "button", content: "BOOK TABLE"})
+						+button({className: "c-button--short", type: "button", content: "EXPLORE"})
+				p.c-banner__timetable Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+				.c-banner__social
+					.c-banner__social__wrapper
+						.c-banner__social__item
+							+link({className: "e-link--social", idName: "link-social", href: "https://www.facebook.com/", target: "_blank", svg: "icon-fb-icon", svgClassName: "icon fb-icon"})
+						.c-banner__social__item
+							+link({className: "e-link--social", idName: "link-social", href: "https://www.twitter.com/", target: "_blank", svg: "icon-twt-icon", svgClassName: "icon twt-icon"})
+						.c-banner__social__item
+							+link({className: "e-link--social", idName: "link-social", href: "https://www.instagram.com/", target: "_blank", svg: "icon-inst-icon", svgClassName: "icon inst-icon"})
+				.c-banner__scroll
+					.c-banner__scroll__wrapper
+						.c-banner__scroll__circle
+							svg.c-banner__scroll__sign(class="icon icon-arrow-icon")
+								use(xlink:href="#icon-arrow-icon")
+						+line({modifier: "vert-central"})
+						+line({modifier: "vert-small"})

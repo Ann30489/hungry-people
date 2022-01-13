@@ -1,0 +1,26 @@
+// Config
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Fonts
+@import "fonts";
+
+// Animation
+@import "animation";
+
+// Reset default styles
+@import "compass/reset";
+
+// Main styles
+@import "./_components/_index";
+@import "./_elements/_index";
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.lock {
+    overflow: hidden;
+  }

@@ -1,0 +1,9 @@
+mixin button(args)
+	- let className = args.className;
+	- let type = args.type;
+	- let content = args.content;
+	- let idName = args.idName || "";
+
+		button.c-button(class= className type= type id= idName)
+			.c-button__wrapper
+				span.c-button__text= content

@@ -1,0 +1,26 @@
+mixin navigation()
+	nav.c-navigation(id="navbar")
+		.c-navigation__wrapper
+			.c-navigation__button(id="navbar-btn")
+				.c-navigation__button__wrapper
+					span.c-navigation__button__line.c-navigation__button__line--first
+					span.c-navigation__button__line.c-navigation__button__line--second
+			ul.c-navigation__block(id="block-left")
+				li.c-navigation__item
+					+link({content: "HOME"})
+				li.c-navigation__item
+					+link({content: "ABOUT"})
+				li.c-navigation__item
+					+link({content: "TEAM"})
+				li.c-navigation__item
+					+link({content: "BOOKING"})
+			ul.c-navigation__block(id="block-right")
+				li.c-navigation__item
+					+link({content: "MENU"})
+				li.c-navigation__item
+					+link({content: "GALERIE"})
+				li.c-navigation__item
+					+link({content: "EVENTS"})
+				li.c-navigation__item
+					+link({content: "CONTACT"})
+			

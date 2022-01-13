@@ -1,0 +1,7 @@
+.c-map {
+    width: 100%;
+    height: 90vh;
+    @media (max-width: 768px) {
+        height: 45vh;
+    }
+}

@@ -1,0 +1,46 @@
+.c-contacts-info {
+    width: 50%;
+    padding-right: 10px;
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+    &__wrapper {
+        @include flexBetween;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 6px;
+    }
+    &__link {
+        text-decoration: none;
+        @include flexBetween;
+    }
+    &__text {
+        color: $c-input-grey;
+        @include fontParams($fs-small, 700, $lh-normal);
+        margin-left: 10px;
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+        @media (max-width: 480px) {
+            line-height: 25px;
+        }
+    }
+}
+
+.map-marker,
+.phone,
+.envelope {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    fill: $c-yellow;
+    &:hover {
+        transform: scale(2);
+        transition: $t-normal;
+        fill: $c-dark-red;
+    }
+}

@@ -1,0 +1,58 @@
+.c-form {
+    @include centerPosition(1200);
+    margin-bottom: 80px;
+    padding: 0 20px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        outline: none;
+        border: 2px solid $c-pale-grey;
+        background-color: $c-pale-grey;
+        padding: 18px;
+        border-radius: 5px;
+        width: 32.9%;
+        &--short {
+            margin-bottom: 0.8%;
+        }
+        &:focus {
+            transition: $t-normal;
+            background-color: $c-dark-grey;
+            color: $c-white;
+            transition: $t-normal;
+        }
+        &::placeholder {
+            @include fontParams($fs-regular, 400, $lh-pre-medium);
+            color: $c-input-grey;
+            @media (max-width: 480px) {
+                font-size: 12px;
+            }
+        }
+        &:invalid {
+            &:focus {
+                border: 2px solid $c-red;
+                background-color: $c-dark-red;
+            }
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+    }
+}
+
+#comment {
+    min-height: 120px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 0.8%;
+}

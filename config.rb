@@ -1,0 +1,9 @@
+preeferred_syntax =:scss
+http_path = 'dev/'
+css_dir = 'public/styles'
+sass_dir = 'dev/scss'
+images_dir = 'dev/assets/images'
+javascripts_dir = 'public/js'
+relative_assets = true
+line_comments = true
+output_style = :compressed

@@ -1,0 +1,14 @@
+mixin form()
+	form.c-form(action="#" metod="POST" id="form")
+		.c-form__wrapper
+			input.c-form__item.c-form__item--short(type="text", name="firstName", id="first-name", minlength=3, placeholder="First name", autocomplete="off", required="")
+			input.c-form__item.c-form__item--short(type="text", name="lastName", id="last-name", minlength=3, placeholder="Last name", autocomplete="off", required="")
+			input.c-form__item.c-form__item--short(type="email", name="email", id="email", minlength=6, placeholder="Email", autocomplete="off", required="")
+			input.c-form__item.c-form__item--short(type="text", name="username", id="username", minlength=2, placeholder="Username", autocomplete="off", required="")
+			input.c-form__item.c-form__item--short(type="password", name="password", id="password", minlength=3, placeholder="Password", autocomplete="off", required="")
+			input.c-form__item.c-form__item--short(type="tel", name="phone", id="phone", minlength=6, placeholder="Phone", autocomplete="off", required="")
+			textarea.c-form__item(name="comment" id="comment" placeholder="Message")
+			p#form-text
+			+contactInfo()
+			+button({className: "c-button--form", idName: "btn-submit", type: "submit", content: "SEND MESSAGE"})
+			

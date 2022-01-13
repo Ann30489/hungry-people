@@ -1,0 +1,56 @@
+@mixin centerPosition($value) {
+  max-width: $value + px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin fontParams($size, $weight, $l-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $l-height;
+}
+
+@mixin btnDefault {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+@mixin btnParams($width, $color) {
+  background-color: $color;
+  width: $width;
+}
+
+@mixin flexBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flexAround {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flexColCent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCentAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

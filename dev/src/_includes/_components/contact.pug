@@ -1,0 +1,10 @@
+mixin contact()
+	.c-contact(id="contact")
+		.c-contact__modal-box(id="modal-container")
+			p.c-contact__modal-box__text(id="modal-text")
+			button.c-contact__modal-box__button(id="modal-button") BACK
+		.c-contact__wrapper
+			p.c-contact__title(id="contact-title") CONTACT
+			+subLine()
+			p.c-contact__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+			+form()

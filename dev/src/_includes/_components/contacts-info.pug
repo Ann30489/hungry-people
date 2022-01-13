@@ -1,0 +1,19 @@
+mixin contactInfo()
+	.c-contacts-info
+		.c-contacts-info__wrapper
+			.c-contacts-info__item
+				a.c-contacts-info__link(href="https://goo.gl/maps/7ncuJ9LtAHZUCYEM7" target="_blank")
+					svg.c-contact-info__svg(class="icon map-marker")
+						use(xlink:href="#icon-map-marker")
+					p.c-contacts-info__text 5th London Boulevard, U.K.
+			.c-contacts-info__item
+				a.c-contacts-info__link(href="tel:+380990000000")
+					svg.c-contact-info__svg(class="icon phone")
+						use(xlink:href="#icon-phone")
+					p.c-contacts-info__text +40 729 131 637/+40 726 458 782
+			.c-contacts-info__item
+				a.c-contacts-info__link(href="mailto:hungry@hungry.com" target="_blank")
+					svg.c-contact-info__svg(class="icon envelope")
+						use(xlink:href="#icon-envelope")
+					p.c-contacts-info__text office@mindblister.com
+			

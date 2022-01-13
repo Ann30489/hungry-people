@@ -1,0 +1,27 @@
+.c-footer {
+    position: relative;
+    z-index: 999;
+    margin-top: -25px;
+    @include flexCentAlign;
+    width: 100%;
+    background-color: $c-footer-dark;
+    height: 15vh;
+    color: $c-input-grey;
+    @media (max-width: 768px) {
+        height: 10vh;
+    }
+    &__wrapper {
+        @include flexCentAlign;
+    }
+    &__text {
+        font-size: $fs-small;
+    }
+    &__copyright,
+    &__date {
+        font-weight: 400;
+    }
+    &__company {
+        font-weight: 700;
+        margin: 0 5px;
+    }
+}

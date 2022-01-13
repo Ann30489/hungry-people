@@ -1,0 +1,58 @@
+.e-link {
+    text-decoration: none;
+    color: $c-white;
+    @include fontParams($fs-small, 700, $lh-normal);
+    z-index: 999;
+
+    &:hover {
+        cursor: pointer;
+        color: $c-yellow;
+        transition: $t-normal;
+    }
+    @media (max-width: 768px) {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        margin-bottom: 25px;
+    }
+}
+
+#link-social {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    @media (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.link-scroll {
+    color: $c-black;
+    &:hover {
+        color: $c-yellow;
+        transition: $t-normal;
+    }
+    @media (max-width: 768px) {
+        color: $c-white;
+    }
+}
+
+.fb-icon,
+.twt-icon,
+.inst-icon {
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    @media (max-width: 768px) {
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,50 @@
+.c-button {
+    @include btnDefault;
+    border-radius: 3px;
+    padding: 15px 0;
+    @media (max-width: 480px) {
+        padding: 10px 0;
+    }
+
+    &--short {
+        z-index: 900;
+        width: 200px;
+        background-color: $c-dark-yellow;
+        border: 1px solid $c-dark-yellow;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $c-light-grey;
+            transition: $t-normal;
+        }
+        @media (max-width: 768px) {
+            width: 155px;
+            margin-bottom: 10px;
+            z-index: 900;
+        }
+        @media (max-width: 480px) {
+            width: 125px;
+            z-index: 900;
+        }
+    }
+
+    &--form {
+        width: 50%;
+        background-color: $c-dark-yellow;
+        border: 1px solid $c-dark-yellow;
+        &:hover {
+            background-color: $c-yellow;
+            border: 1px solid $c-light-grey;
+            transition: $t-normal;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        z-index: 900;
+        @include fontParams($fs-small, 700, $lh-medium);
+        color: $c-white;
+        user-select: none;
+    }
+}

@@ -1,0 +1,21 @@
+mixin link(args)
+	- let href = args.href || '#';
+	- let svg = args.svg || false;
+	- let content = args.content; 
+	- let idName = args.idName || '';
+	- let className = args.className || '';
+	- let svgClassName = args.svgClassName ||'';
+	- let target = '_blank' || '';
+
+		a.e-link(href= href, id= idName, target= target)
+			if svg
+				svg(class= svgClassName)
+					use(xlink:href= "#" + svg)
+				if content
+					span= content
+			else 
+				span= content
+
+	 
+
+
