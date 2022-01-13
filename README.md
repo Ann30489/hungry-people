@@ -2,3 +2,5 @@
 # Hungry People restaurant website
 
 Main plan is in dev/assets folder
+
+Website: https://hungry-people-rest.herokuapp.com/
